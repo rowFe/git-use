@@ -96,6 +96,7 @@ git 官网：https://git-scm.com/book/zh/v2
     5. git branch --unset-upstream 撤销本地分支与远程分支的映射关系
     6. 本地分支可以与远程的不同命分支建立映射关系 
         如: 本地分支dev 远程分支rev (git branch -u origin/rev) 推送(push)代码时应用git push origin HEAD:rev
+    7. git branch -vv 查看本地分支与远程分支的映射关系
 
 18. Rebase
     1.  rebase操作可以把本地未push的分叉提交历史整理成直线
