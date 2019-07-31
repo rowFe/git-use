@@ -92,7 +92,11 @@ git 官网：https://git-scm.com/book/zh/v2
         多人协作时，默认情况从远程库clone 默认只能看到master分支
         若这台电脑(下面称other)需要在另一个分支(比如dev)开发 则需要在本地创建和远程分支对应的分支 即 git checkout -b dev origin/dev(本地和远程分支的名称最好一致)
     3.  本地库有一个feature分支 远程库没有这个分支 若想推送分支到远程库 使用 git push --set-upstream origin feature
-    4.  git pull失败并且报错提示no tracking information 原因是本地分支(dev)与远程分支(orgin/dev)的链接关系没有创建 使用git branch --set-upstream-to=origin/dev dev
+    4.  git pull失败并且报错提示no tracking information 原因是本地分支(dev)与远程分支(orgin/dev)的链接关系没有创建 使用git branch --set-upstream-to=origin/dev dev (git branch -u origin/dev 或者 git branch --set-upstream-to origin/dev)
+    5. git branch --unset-upstream 撤销本地分支与远程分支的映射关系
+    6. 本地分支可以与远程的不同命分支建立映射关系 
+        如: 本地分支dev 远程分支rev (git branch -u origin/rev) 推送(push)代码时应用git push origin HEAD:rev
+    7. git branch -vv 查看本地分支与远程分支的映射关系
 
 18. Rebase
     1.  rebase操作可以把本地未push的分叉提交历史整理成直线
