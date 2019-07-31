@@ -56,7 +56,7 @@ git 官网：https://git-scm.com/book/zh/v2
 11. 从远程库克隆 git clone git@github.com:rowFe/test.git
 
 12. 创建与合并分支
-    1.  git checkout -b dev 创建dev分支并且切换到dev分支
+    1.  git checkout -b dev 创建dev分支并且切换到dev分支 git push origin dev (push dev分支到远程)
     2.  1)相当于 
         git branch dev 创建dev分支
         git checkout dev 切换到dev分支 
