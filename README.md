@@ -133,5 +133,11 @@ git 官网：https://git-scm.com/book/zh/v2
         3.  git rebase [basebranch] [topicbranch] (basebranch为基分支，topicbranch为要变基的分支)
     2. git pull 自带merge问题
         若工作区有新的commit时 push前需要拉去远程最新的代码 最好使用git pull --rebase (防止有冲突时污染历史图)
-
+       
+23.删除分支
+    1.删除远程分支
+        git push origin --delete dev
+    3.删除本地分支
+        git branch -d dev
+        git branch -D dev(强制删除)
 
